@@ -1,0 +1,106 @@
+/* iOS Cordova Tweak */
+.device-cordova.device-ios {
+  height: 100vh;
+}
+
+/* Custom color theme properties */
+:root {
+  --f7-theme-color: #fc4d4d;
+  --f7-theme-color-rgb: 247, 242, 186;
+  --f7-theme-color-shade: #ffeaea00;
+  --f7-theme-color-tint: #ffd7d7;
+}
+
+/* Your app custom styles here */
+
+$accent: #00bcd4;
+$primary: #212121;
+$secondary: #727272;
+
+$scoreRed: #dd340080;
+$scoreYellow: #d5ce006d;
+$scoreGreen: #00874687;
+
+.password {
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 100%;
+  color: $secondary;
+
+  &__input {
+    display: block;
+    text-transform: none;
+    width: 100%;
+    height: 42px;
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: #b6b6b6;
+    font-weight: 400;
+    color: $primary;
+
+    &:focus,
+    &:active {
+      border-color: $accent;
+      outline: 0;
+    }
+  }
+
+  &__show {
+    cursor: pointer;
+    position: absolute !important;
+    bottom: 8px;
+    height: 20px;
+    right: 0;
+    // background: $secondary;
+    // color: white;
+    // padding: 4px 8px;
+    border-radius: 4px;
+    // font-weight: 700;
+    // font-size: 0.8em;
+    color: #5d5d5d78;;
+    padding: 4px 10px;
+    font-weight: 700; 
+    font-size: 1.5em;
+  }
+
+  &__strength {
+    position: absolute;
+    width: 0%;
+    height: 4px;
+    bottom: -8px;
+    left: 0;
+    background: transparent;
+    transition: all 300ms ease-in-out;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 0px 1px 4px -2px rgba(0, 0, 0, 0.5);
+
+    &[data-score="null"] {
+      width: 0;
+      background: red;
+    }
+
+    &[data-score="0"] {
+      width: 5%;
+      background: $scoreRed;
+    }
+    &[data-score="1"] {
+      width: 25%;
+      background: $scoreRed;
+    }
+    &[data-score="2"] {
+      width: 50%;
+      background: $scoreYellow;
+    }
+    &[data-score="3"] {
+      width: 75%;
+      background: $scoreGreen;
+    }
+    &[data-score="4"] {
+      width: 100%;
+      background: $scoreGreen;
+    }
+  }
+}
