@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "238248687250",
+    "firebase_url": "https://invtelpro.firebaseio.com",
+    "project_id": "invtelpro",
+    "storage_bucket": "invtelpro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238248687250:android:96a68faff43da07d9f184b",
+        "android_client_info": {
+          "package_name": "io.inventory.telpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "238248687250-p3i24nuimfamo3gt327a3luvis6ahsdv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7EaV4dZ3rP5E-jRUJ7x1mISqAyrIc0hQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "238248687250-p3i24nuimfamo3gt327a3luvis6ahsdv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
